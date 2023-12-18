@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mentor Mate - Home</title>
+	<link rel="stylesheet" th:href="@{../css/home.css}" />
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+
+	<nav>
+		<ul>
+				<!-- Adding logo image here -->
+			
+			<img src="../css/logo.jpg" alt="Logo" style="height: 40px; width: 40px;">
+			<a class="navbar-title" href="/">MENTOR MATE</a>
+			
+			<li><a th:href="@{/login}">Login/Register</a></li>
+			<li><a th:href="@{/about-us}">About Us</a></li>
+			<li><a th:href="@{/}" class="active">Home</a></li>
+		</ul>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="hero">
+		<h1>Welcome to Mentor Mate!</h1>
+		<p>Your platform for mentorship and learning.</p>
+	</section>
+
+	<section class="main-content">
+		<div class="image-container">
+			<img src="../css/bg-img.jpg" alt="Side Image">
+		</div>
+		<div class="information-container">
+			<h2>Welcome to Mentor Mate</h2>
+			<p>
+				Mentor Mate is a platform where mentors and mentees connect to share knowledge and experiences.
+			</p>
+			<p>
+				Our mission is to foster a community of learning and growth through mentorship. Whether you're looking
+				for guidance as a mentee or you want to contribute as a mentor, Mentor Mate is the place for you.
+			</p>
+			 Add any additional information or features here 
+		</div>
+	</section>
+
+	<!-- About Us Section -->
+	<section class="about-us">
+		<h2>About Us</h2>
+		<p>Learn more about Mentor Mate and our mission to connect mentors and mentees.</p>
+		<a th:href="@{/about-us}" class="btn">Read More</a>
+	</section>
+
+	<!-- Contact Us Section -->
+	<section class="contact-us">
+		<h2>Contact Us</h2>
+		<p>Have questions or feedback? Contact our support team.</p>
+		<a th:href="@{/contact-us}" class="btn">Contact Us</a>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2023 Mentor Mate. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>
